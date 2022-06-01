@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<h3 align="center">Time</h3>
+<h3 align="center">Times</h3>
 
 <p align="center">
     A demo app made for assignment given by Deeplogictech to demonstrate the use of APIs and Node JS
