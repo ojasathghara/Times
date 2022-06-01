@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.hamburger-and-title {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: red;
+}
+
+.hamburger {
+    width: 1.5rem;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.bar {
+    width: 100%;
+    background-color: black;
+    margin-top: 0.3rem;
+}
+
+.bar1 {
+    height: 0.06rem;
+}
+.bar2 {
+    height: 0.08rem;
+}
+.bar3 {
+    height: 0.2rem;
+}
+
+.navbar-search {
+    margin-top: 0.4rem;
+    height: 2rem;
+    width: 16rem;
+    border: 0;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+}
+
+.main {
+    width: 88%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+.featured {
+    flex: 4 4 70%;
+}
+.featured h2 {
+    margin-bottom: 1rem;
+    font-family: "Segoe UI";
+    font-size: xx-large;
+}
+.featured-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.featured-card {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    height: max-content;
+    max-width: 100%;
+}
+
+.featured-card-title {
+    color: #f8344b;
+    font-family: "Courier New";
+}
+
+.featured-card-description {
+    font-family: "calibri";
+    font-weight: 600;
+}
+
+.latest {
+    background-color: #f7ff00;
+    display: grid;
+
+    flex: 1 0 15rem;
+    min-width: 15rem;
+    height: auto;
+}
+.latest h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Segoe UI";
+}
+
+.latest-card {
+    padding: 0 10% 0 10%;
+    margin-top: 1rem;
+}
+
+.latest-card a {
+    text-decoration: none;
+    color: black;
+    font-family: "Courier New";
+    font-weight: 600;
+}
+.latest-card p {
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: 300;
+    color: gray;
+}
+
+@media only screen and (max-width: 950px) {
+    .featured-content {
+        grid-template-columns: auto;
+    }
+    .latest {
+        flex: 1 0 25%;
+        min-width: 12rem;
+    }
+}
